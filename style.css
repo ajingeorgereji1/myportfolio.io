@@ -12,7 +12,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to right, #ece9e6, #ffffff); /* Soft light gradient */
+    background: #f4f4f9;
+    background-image: radial-gradient(circle at 0.5px 0.5px, #ddd 1px, transparent 0), 
+                      radial-gradient(circle at 0.5px 0.5px, #ddd 1px, transparent 0);
+    background-size: 30px 30px;
+    background-blend-mode: multiply;
     overflow-x: hidden;
 }
 
@@ -85,7 +89,7 @@ body {
     border-radius: 10px;
     flex: 1 1 calc(33.333% - 20px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #f0f0f0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
