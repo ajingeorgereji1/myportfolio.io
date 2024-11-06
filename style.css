@@ -9,8 +9,14 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f9;
+    background-image: radial-gradient(circle at 0.5px 0.5px, #ddd 1px, transparent 0), 
+                      radial-gradient(circle at 0.5px 0.5px, #ddd 1px, transparent 0);
+    background-size: 30px 30px;
+    background-blend-mode: multiply;
     overflow-x: hidden;
 }
 
@@ -92,10 +98,17 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Flex Layout for Skills, Projects, Experience */
-.skills, .projects, .experience {
+/* Flex Layout for Skills and Projects */
+.skills, .projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Experience Section as Flex Column */
+.experience {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -135,11 +148,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Smooth Scroll on Section Links */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Media Query for Responsive Design */
